@@ -1,4 +1,8 @@
 function CustomHeader() {
+  const isLoggedIn = false;
+  const doLoginMessage = <p>Faça seu login</p>;
+  const doLogoutMessage = <p>Logout</p>;
+
   return (
     <header>
       <table>
@@ -13,7 +17,7 @@ function CustomHeader() {
           </div>
         </td>
         <td>
-          <div>{/* TODO: Implementar logica para mudar botão ao clicar */}</div>
+          <div>{isLoggedIn ? doLogoutMessage : doLoginMessage}</div>
         </td>
       </table>
     </header>
