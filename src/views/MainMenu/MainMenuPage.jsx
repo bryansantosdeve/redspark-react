@@ -33,6 +33,8 @@ function MainMenuPage() {
     imagem: './assets/images/default-mini-house.jpg',
   };
 
+  const imoveis = [imovel1, imovel2, imovel3, imovel4];
+
   return (
     <div>
       <section>
@@ -46,7 +48,16 @@ function MainMenuPage() {
         </form>
       </section>
       <main>
-        <CustomCard
+        {imoveis.map((imovel, index) => (
+          <CustomCard
+            key={index}
+            titulo={imovel.titulo}
+            descricao={imovel.descricao}
+            preco={imovel.preco}
+            imagem={imovel.imagem}
+          />
+        ))}
+        {/* <CustomCard
           titulo={imovel1.titulo}
           descricao={imovel1.descricao}
           preco={imovel1.preco}
@@ -72,7 +83,7 @@ function MainMenuPage() {
           descricao={imovel4.descricao}
           preco={imovel4.preco}
           imagem={imovel4.imagem}
-        />
+        /> */}
       </main>
     </div>
   );
