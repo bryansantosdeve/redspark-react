@@ -2,7 +2,7 @@ import './App.css';
 import CustomFooter from './Components/surfaces/CustomFooter';
 import CustomHeader from './Components/surfaces/CustomHeader';
 
-import MainMenuPage from './Pages/main/MainMenuPage';
+import MainMenuPage from './views/MainMenu/MainMenuPage';
 
 function App() {
   return (

@@ -1,25 +1,20 @@
+import UserLoginButton from '../../buttons/UserLoginButton';
+import UserIconButton from '../../buttons/UserIconButton';
+
 function CustomHeader() {
   const isLoggedIn = false;
-  const doLoginMessage = <p>Faça seu login</p>;
-  const doLogoutMessage = <p>Logout</p>;
 
   return (
     <header>
-      <table>
-        <td>
-          <div>
-            <h1>Imobiliária Red(e) Spark</h1>
-          </div>
-        </td>
-        <td>
-          <div>
-            <p>Seja bem vindo, usuário!</p>
-          </div>
-        </td>
-        <td>
-          <div>{isLoggedIn ? doLogoutMessage : doLoginMessage}</div>
-        </td>
-      </table>
+      <div>
+        <h1>Imobiliária Red(e) Spark</h1>
+      </div>
+
+      <div>
+        <p>Seja bem vindo, usuário!</p>
+      </div>
+
+      <div>{isLoggedIn ? <UserLoginButton /> : <UserIconButton />}</div>
     </header>
   );
 }

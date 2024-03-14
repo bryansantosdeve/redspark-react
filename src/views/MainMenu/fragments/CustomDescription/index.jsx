@@ -1,6 +1,6 @@
 function CustomDescription({ titulo, descricao, preco }) {
   return (
-    <section>
+    <div>
       <div>
         <h2>{titulo}</h2>
       </div>
@@ -10,7 +10,7 @@ function CustomDescription({ titulo, descricao, preco }) {
       <div>
         <p>R${preco}</p>
       </div>
-    </section>
+    </div>
   );
 }
 
