@@ -1,21 +1,22 @@
 import UserLoginButton from '../../buttons/UserLoginButton';
 import UserIconButton from '../../buttons/UserIconButton';
+import { DescriptionText, Header, Title } from './styles';
 
 function CustomHeader() {
   const isLoggedIn = false;
 
   return (
-    <header>
+    <Header>
       <div>
-        <h1>Imobiliária Red(e) Spark</h1>
+        <Title>Imobiliária Red(e) Spark</Title>
       </div>
 
       <div>
-        <p>Seja bem vindo, usuário!</p>
+        <DescriptionText>Seja bem vindo, usuário!</DescriptionText>
       </div>
 
       <div>{isLoggedIn ? <UserLoginButton /> : <UserIconButton />}</div>
-    </header>
+    </Header>
   );
 }
 

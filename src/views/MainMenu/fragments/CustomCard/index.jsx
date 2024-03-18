@@ -1,15 +1,17 @@
 import CustomDescription from '../CustomDescription';
+import { Image } from './styles';
 
-function CustomCard({ titulo, descricao, preco, imagem }) {
+function CustomCard({ titulo, localizacao, descricao, preco, imagem }) {
   return (
     <section>
       <figure>
-        <img src={imagem} alt={titulo}></img>
+        <Image src={imagem} alt={titulo}></Image>
       </figure>
 
       <div>
         <CustomDescription
           titulo={titulo}
+          localizacao={localizacao}
           descricao={descricao}
           preco={preco}
         />

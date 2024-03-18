@@ -1,8 +1,10 @@
+import { Footer } from './styles';
+
 function CustomFooter() {
   return (
-    <footer>
+    <Footer>
       <p>Redspark - Todos os direitos reservados - 2024</p>
-    </footer>
+    </Footer>
   );
 }
 

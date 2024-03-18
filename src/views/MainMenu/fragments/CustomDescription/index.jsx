@@ -1,14 +1,19 @@
-function CustomDescription({ titulo, descricao, preco }) {
+import { DescriptionText, Title } from './styles';
+
+function CustomDescription({ titulo, localizacao, descricao, preco }) {
   return (
     <div>
       <div>
-        <h2>{titulo}</h2>
+        <Title>{titulo}</Title>
       </div>
       <div>
-        <p>{descricao}</p>
+        <DescriptionText>{localizacao}</DescriptionText>
       </div>
       <div>
-        <p>R${preco}</p>
+        <DescriptionText>{descricao}</DescriptionText>
+      </div>
+      <div>
+        <DescriptionText>R${preco}</DescriptionText>
       </div>
     </div>
   );
