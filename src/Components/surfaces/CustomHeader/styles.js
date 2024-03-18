@@ -7,6 +7,9 @@ export const Title = styled.h1`
 export const Header = styled.header`
   background-color: #f7f2e7;
   font-size: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 `;
 
 export const DescriptionText = styled.p`

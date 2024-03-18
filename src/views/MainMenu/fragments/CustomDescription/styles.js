@@ -7,4 +7,5 @@ export const Title = styled.h2`
 /// TODO: Criar a lógica para aceitar mais de uma cor, mas ter uma padrão.
 export const DescriptionText = styled.p`
   font-size: 1.1rem;
+  color: ${(props) => props.color || 'black'};
 `;
