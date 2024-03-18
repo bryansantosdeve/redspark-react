@@ -9,6 +9,7 @@ function CustomInputRadio({ name, id, label, onChange }) {
         onChange={onChange}
       />
       <label htmlFor={id}>{label}</label>
+      <div></div>
     </div>
   );
 }
