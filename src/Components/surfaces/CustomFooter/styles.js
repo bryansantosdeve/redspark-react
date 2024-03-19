@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
 export const Footer = styled.footer`
-  background-color: #d0e1f9;
+  background-color: #114b5f;
   padding: 15px;
 `;

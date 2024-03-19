@@ -1,14 +1,16 @@
+import { Input, Label } from './styles';
+
 function CustomInputRadio({ name, id, label, onChange }) {
   return (
     <div>
-      <input
+      <Input
         type='radio'
         name={name}
         id={id}
         value={label}
         onChange={onChange}
       />
-      <label htmlFor={id}>{label}</label>
+      <Label htmlFor={id}>{label}</Label>
     </div>
   );
 }

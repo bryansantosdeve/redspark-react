@@ -1,9 +1,9 @@
 import CustomDescription from '../CustomDescription';
-import { Image } from './styles';
+import { Image, Section } from './styles';
 
 function CustomCard({ titulo, localizacao, descricao, preco, imagem }) {
   return (
-    <section>
+    <Section>
       <figure>
         <Image src={imagem} alt={titulo}></Image>
       </figure>
@@ -16,7 +16,7 @@ function CustomCard({ titulo, localizacao, descricao, preco, imagem }) {
           preco={preco}
         />
       </div>
-    </section>
+    </Section>
   );
 }
 

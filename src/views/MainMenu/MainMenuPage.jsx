@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import CustomCard from '../MainMenu/fragments/CustomCard';
-import { ButtonInput, TextInput } from './styles';
+import { ButtonInput, Main, Section, Span, TextInput } from './styles';
 import CustomInputRadioWrapper from './fragments/CustomInputRadioWrapper';
 import data from '../../data.json';
 
@@ -12,7 +12,7 @@ function MainMenuPage() {
 
   const searchedValueFeedback = (
     <section>
-      <p>Termo pesquisado: {searchedValue}</p>
+      <Span>Termo pesquisado: {searchedValue}</Span>
     </section>
   );
 
@@ -30,7 +30,7 @@ function MainMenuPage() {
   /// FRAGMENT X DIV
   return (
     <div>
-      <section>
+      <Section>
         <fieldset>
           <TextInput
             type='text'
@@ -49,9 +49,9 @@ function MainMenuPage() {
         <fieldset>
           <CustomInputRadioWrapper />
         </fieldset>
-      </section>
+      </Section>
       {searchedValue && searchedValueFeedback}
-      <main>
+      <Main>
         {imoveis.map((imovel, index) => (
           <CustomCard
             key={index}
@@ -62,7 +62,7 @@ function MainMenuPage() {
             imagem={imovel.imagem}
           />
         ))}
-      </main>
+      </Main>
     </div>
   );
 }
