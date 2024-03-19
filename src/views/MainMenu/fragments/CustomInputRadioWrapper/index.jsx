@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 import CustomInputRadio from '../../../../Components/inputs/CustomInputRadio';
+import { CustomInputRadioContainer } from './styles';
 
-function CustomInputRadioWrapper({ name, id, label }) {
+function CustomInputRadioWrapper() {
   const customInputRadioName = 'filter';
 
   const [opcaoSelecionada, setOpcaoSelecionada] = useState(null);
@@ -21,7 +22,7 @@ function CustomInputRadioWrapper({ name, id, label }) {
   }
 
   return (
-    <div>
+    <CustomInputRadioContainer>
       <CustomInputRadio
         name={customInputRadioName}
         id='option-radio-by-region'
@@ -35,7 +36,7 @@ function CustomInputRadioWrapper({ name, id, label }) {
         label='By Price'
         onChange={handleClick}
       />
-    </div>
+    </CustomInputRadioContainer>
   );
 }
 

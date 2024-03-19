@@ -2,7 +2,7 @@ import { DescriptionText, Title } from './styles';
 
 function CustomDescription({ titulo, localizacao, descricao, preco }) {
   return (
-    <div>
+    <>
       <div>
         <Title>{titulo}</Title>
       </div>
@@ -15,7 +15,7 @@ function CustomDescription({ titulo, localizacao, descricao, preco }) {
       <div>
         <DescriptionText>R${preco}</DescriptionText>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -10,6 +10,12 @@ function MainMenuPage() {
   const [searched, setSearched] = useState('');
   const [searchedValue, setSearchedValue] = useState('');
 
+  const searchedValueFeedback = (
+    <section>
+      <p>Termo pesquisado: {searchedValue}</p>
+    </section>
+  );
+
   /// == x ===
   useEffect(() => {
     if (!searchedValue) setImoveis(data);
@@ -44,11 +50,7 @@ function MainMenuPage() {
           <CustomInputRadioWrapper />
         </fieldset>
       </section>
-      {searchedValue && (
-        <section>
-          <p>Termo pesquisado: {searchedValue}</p>
-        </section>
-      )}
+      {searchedValue && searchedValueFeedback}
       <main>
         {imoveis.map((imovel, index) => (
           <CustomCard
